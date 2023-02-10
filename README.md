@@ -2,7 +2,7 @@
 <br />
 
 <p align="justify">
-Uma das minhas primeiras api desenvolvidas em Laravel. A ideia foi criar um CRUD básico para a entidade Produtos. Foi utilizado o banco de dados MySQL.
+Uma das minhas primeiras api desenvolvida em Laravel. A ideia foi criar um CRUD básico para a entidade Produtos. Foi utilizado o banco de dados MySQL.
 </p>
 
 <hr />
@@ -31,7 +31,7 @@ Uma das minhas primeiras api desenvolvidas em Laravel. A ideia foi criar um CRUD
 
 <span>4 - Configure seu banco de dados no `.env`:</span>
 
-> 9 &nbsp;&nbsp;&nbsp; DB_CONNECTION=mysql <br>
+> 9 &nbsp;&nbsp;&nbsp;&nbsp; DB_CONNECTION=mysql <br>
 > 10 &nbsp;&nbsp;&nbsp; DB_HOST=127.0.0.1 <br>
 > 11 &nbsp;&nbsp;&nbsp; DB_PORT=3306 <br>
 > 12 &nbsp;&nbsp;&nbsp; DB_DATABASE= your_database <br>
