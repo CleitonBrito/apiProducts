@@ -45,7 +45,13 @@ Uma das minhas primeiras api desenvolvida em Laravel. A ideia foi criar um CRUD 
     $ composer install
 ```
 
-<span>6 - Execute-o:</span>
+<span>6 - Rode as migrations:</span>
+
+```bash
+    $ php artisan migrate
+```
+
+<span>7 - Execute-o:</span>
 
 ```bash
     $ php artisan serve
