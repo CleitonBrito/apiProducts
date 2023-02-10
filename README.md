@@ -23,19 +23,13 @@ Uma das minhas primeiras api desenvolvidas em Laravel. A ideia foi criar um CRUD
     $ cd apiProducts/
 ```
 
-<span>3 - Instale as dependências com o composer:</span>
-
-```bash
-    $ composer install
-```
-
-<span>4 - Copie o `.env-example` para `.env`:</span>
+<span>3 - Copie o `.env-example` para `.env`:</span>
 
 ```bash
     $ copy .env-example .env
 ```
 
-<span>5 - Configure seu banco de dados no `.env`:</span>
+<span>4 - Configure seu banco de dados no `.env`:</span>
 
 > 9 &nbsp;&nbsp;&nbsp; DB_CONNECTION=mysql <br>
 > 10 &nbsp;&nbsp;&nbsp; DB_HOST=127.0.0.1 <br>
@@ -45,13 +39,13 @@ Uma das minhas primeiras api desenvolvidas em Laravel. A ideia foi criar um CRUD
 > 14 &nbsp;&nbsp;&nbsp; DB_PASSWORD= your_password <br>
 
 <br>
-<span>6 - Instale as dependências com o composer:</span>
+<span>5 - Instale as dependências com o composer:</span>
 
 ```bash
     $ composer install
 ```
 
-<span>7 - Execute-o:</span>
+<span>6 - Execute-o:</span>
 
 ```bash
     $ php artisan serve
