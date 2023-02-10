@@ -61,16 +61,20 @@ class ProductController extends Controller
         }
     }
 
-    public function delete(Product $id){
+    public function delete($id){
         try {
-            $id->delete();
-            $response = ['data' => ['msg' => 'Produto: ['.$id->name. '] removido com sucesso!']];
-            return response()->json($response, 200);
+            $product = Product::find($id);
+            if(!empty($product)){
+                $response = ['data' => ['msg' => 'Produto: ['.$product->name. '] removido com sucesso!']];
+                $product->delete();
+                return response()->json($response, 200);
+            }else{
+                return response()->json(ApiError::errorMessage('Houve um erro ao realizar operação de deletar.', 1012), 500);
+            }
         } catch (\Exception $e) {
             if (config('app.debug')){
                 return response()->json(ApiError::errorMessage($e->getMessage(), 1012), 500);
             }
-            return response()->json(ApiError::errorMessage('Houve um erro ao realizar operação de deletar.', 1012), 500);
         }
     }
 }
